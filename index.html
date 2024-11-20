@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="A brief page description" name="description">
+    <meta content="html,cheatsheet" name="keywords">
+    <meta content="YourFacebookUsername" property="fb:admins">
+
+    <link href="/img/p5-sq-reverse32.png" rel="icon">
+    <link href="/styles/styles.css" rel="stylesheet">
+
+    <title>Calculator del Dr. Einstein</title>
+
+    <script async src="src/scriptindex.js"></script>
+
+    <script defer src="//cdn.JsDelivr.net/npm/p5"></script>
+
+    <script type="module" src="/src/sketch.mjs"></script>
+  </head>
+
+  <body>
+    <header><nav><ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Go Back</a></li>
+      <li><a href="#">Go forward</a></li>
+      <li><a href="#">Calculadora</a></li>
+      <li><a href="#">Info</a></li>
+      <li><a href="#">About</a></li>
+    </ul></nav></header>
+
+    <main>
+      <label for="pantallaResultat"></label>
+      <input disabled id="pantallaResultat" placeholder="0" type="text"
+             label="pantalla"/>
+      <br>
+      <button id="boton1" onclick="tractarUn()">1</button>
+      <button id="boton2" onclick="tractarDos()">2</button>
+      <button id="boton3" onclick="tractarTres()">3</button>
+    </main>
+
+    <div id="sketch-holder"></div>
+  </body>
+</html>
